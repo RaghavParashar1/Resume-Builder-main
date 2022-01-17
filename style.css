@@ -1,0 +1,12 @@
+body{
+    background-color: var(--primary);
+}
+
+
+/* color codes */
+:root {
+    --primary: #2d2424;
+    --secondary: #5c3d2e;
+    --light: #b85c38;
+    --highlight : #e0c097;
+  }
