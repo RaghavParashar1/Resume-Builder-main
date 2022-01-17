@@ -2,6 +2,31 @@ body{
     background-color: var(--highlight);
 }
 
+.buton{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--highlight);
+    padding: 7px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+
+.buton1{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--highlight);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
 
 .text{
     color: var(--primary);
