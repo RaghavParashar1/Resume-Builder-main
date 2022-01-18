@@ -40,3 +40,26 @@ function addaq(){
     // inserting the new node before add button
     aqOb.insertBefore(newNode, aqAddButtonOb);
 }
+
+
+// functionality of Extracurricular Activity button
+function addeca(){
+    // console.log("added");
+    // creating new node which contains textarea 
+    let newNode = document.createElement("textarea");
+    // adding classes in new node
+    newNode.classList.add("form-control");
+    newNode.classList.add("ecaField");
+    newNode.classList.add("mt-2");
+    newNode.setAttribute("rows",2);
+    newNode.setAttribute("placeholder","Enter Your Extracurricular Activity Here")
+
+    // giving refernce to the areas in which we have to insert the new node
+    // reference of div class where new node is inserting
+    let ecaOb = document.getElementById("eca");
+    // reference of id before which we have to insert the new node
+    let ecaAddButtonOb = document.getElementById("ecaAddButton");
+
+    // inserting the new node before add button
+    ecaOb.insertBefore(newNode, ecaAddButtonOb);
+}
