@@ -1,3 +1,10 @@
+// To Prevent User From Reloading The Page
+window.addEventListener('beforeunload', ()=>{
+    event.preventDefault();
+    event.returnValue = "";
+})
+
+
 // functionalty of workex button
 function addwe(){
     // creating new node which contains textarea 
