@@ -16,6 +16,7 @@
         <h1 class="text-center my-2 text">Resume Builder</h1>
         <p class="text-center text">Fill this form to build your Resume</p>
         <div class="row">
+            <!-- Personal Information -->
             <div class="col-md-6">
                 <h3 class="text">Personal Information</h3>
                 <div class="form-group mt-2">
@@ -35,6 +36,7 @@
                     <textarea type="text" id="addressField" placeholder="Enter Your Address Here" class="form-control"
                         rows="3"></textarea>
                 </div>
+                <!-- Important Links -->
                 <p class="my-2 text">Important Links</p>
                 <div class="form-group mt-2">
                     <label class="text" for="githubField">Github</label>
@@ -49,6 +51,7 @@
                     <input type="url" id="portfolioField" placeholder="Enter Your link Here" class="form-control" />
                 </div>
             </div>
+            <!-- Professional Information -->
             <div class="col-md-6">
                 <h3 class="text">Professional Information</h3>
                 <div class="form-group mt-2">
@@ -56,29 +59,35 @@
                     <textarea type="text" id="objectiveField" placeholder="Enter Your Objective Here"
                         class="form-control" rows="2"></textarea>
                 </div>
-                <div class="form-group mt-2">
-                    <label class="text" for="workexField">Work Experience</label>
-                    <textarea type="text" id="workexField" placeholder="Enter Your Work Details Here"
-                        class="form-control" rows="2"></textarea>
+                <!-- Work experience -->
+                <div class="form-group mt-2" id="we">
+                    <label class="text" for="">Work Experience</label>
+                    <textarea type="text" placeholder="Enter Your Work Details Here" class="form-control weField"
+                        rows="2"></textarea>
+                    <!-- button -->
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addwe()" class="buton">Add</button>
+                    </div>
                 </div>
-                <div class="container text-center mt-2" id="weAddButton">
-                    <button class="buton">Add</button>
-                </div>
+                <!-- Academic qualification -->
                 <div class="form-group mt-2">
                     <label class="text" for="academicField">Academic Qualification</label>
-                    <textarea type="text" id="academicField" placeholder="Enter Your Work Details Here"
-                        class="form-control" rows="2"></textarea>
+                    <textarea type="text" id="academicField" placeholder="Enter Your Academic Qualification Here"
+                        class="form-control workexField" rows="2"></textarea>
+                    <!-- button -->
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button class="buton">Add</button>
+                    </div>
                 </div>
-                <div class="container text-center mt-2" id="aqAddButton">
-                    <button class="buton">Add</button>
-                </div>
+                <!-- Extracurricular Activity -->
                 <div class="form-group mt-2">
                     <label class="text" for="ecField">Extracurricular Activity</label>
-                    <textarea type="text" id="ecField" placeholder="Enter Your Work Details Here" class="form-control"
-                        rows="2"></textarea>
-                </div>
-                <div class="container text-center mt-2" id="ecAddButton">
-                    <button class="buton">Add</button>
+                    <textarea type="text" id="ecField" placeholder="Enter Your Extracurricular Activity Here"
+                        class="form-control" rows="2"></textarea>
+                    <!-- button -->
+                    <div class="container text-center mt-2" id="ecAddButton">
+                        <button class="buton">Add</button>
+                    </div>
                 </div>
             </div>
         </div>
