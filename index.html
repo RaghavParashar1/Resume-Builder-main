@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- resume form -->
+    <div class="container" id="resume-form">
         <h1 class="text-center my-2 text">Resume Builder</h1>
         <p class="text-center text">Fill this form to build your Resume</p>
         <div class="row">
@@ -63,8 +64,8 @@
                 <!-- Skill field -->
                 <div class="form-group mt-2">
                     <label class="text" for="stField">Skill and Technologies</label>
-                    <textarea type="text" id="stField" placeholder="Enter Your Objective Here"
-                        class="form-control" rows="2"></textarea>
+                    <textarea type="text" id="stField" placeholder="Enter Your Objective Here" class="form-control"
+                        rows="2"></textarea>
                 </div>
                 <!-- Work experience -->
                 <div class="form-group mt-2" id="we">
@@ -100,7 +101,124 @@
         </div>
         <div class="text-center mt-3">
 
-            <button class="buton1">Generate Resume</button>
+            <button onclick="genresume()" class="buton1">Generate Resume</button>
+        </div>
+    </div>
+
+    <!-- resume template -->
+    <div class="container resume-background" id="resume-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- image -->
+                <img src="https://www.kbl.co.uk/wp-content/uploads/2017/11/Default-Profile-Male.jpg" alt=""
+                    class="img-fluid myimg" />
+                <!-- details -->
+                <div class="container">
+                    <p id="nameT1">XYZ</p>
+                    <p id="contactT">123456789</p>
+                    <p id="mailT">mail</p>
+                    <p class="addressT">mdnr</p>
+
+                    <hr />
+                    <!-- important links -->
+                    <p>
+                        <a id="gitT" href="#1">qwwwe</a>
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#1">qwwwe</a>
+                    </p>
+                    <p>
+                        <a id="portfolioT" href="#1">qwwwe</a>
+                    </p>
+
+                    <hr />
+                    <!-- skill card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Skill and Technologies</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="skillT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, optio officiis,
+                                temporibus
+                                dolor
+                                dignissimos facilis voluptates quam quod praesentium exercitationem necessitatibus enim
+                                corporis
+                                sunt quia mollitia, obcaecati cumque soluta in.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 py-5">
+                <h1 id="nameT2" class="text-center" style="font-weight: 900;">XYZ</h1>
+
+                <!-- objective card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, optio officiis,
+                            temporibus
+                            dolor
+                            dignissimos facilis voluptates quam quod praesentium exercitationem necessitatibus enim
+                            corporis
+                            sunt quia mollitia, obcaecati cumque soluta in.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- work experience -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- education -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- extra card -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Extracurricular Activity</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="eaT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, optio officiis, temporibus
+                            dolor
+                            dignissimos facilis voluptates quam quod praesentium exercitationem necessitatibus enim
+                            corporis
+                            sunt quia mollitia, obcaecati cumque soluta in.
+                        </p>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="print()" class="btn background">Print Resume</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- JavaScript Bundle with Popper -->

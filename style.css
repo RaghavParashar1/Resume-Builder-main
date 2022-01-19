@@ -1,3 +1,13 @@
+/* #resume-form{
+    display: none;
+} */
+
+.myimg{
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    width: 200px;
+}
+
 body{
     background-color: var(--highlight);
 }
@@ -49,3 +59,12 @@ body{
     --light: #b85c38;
     --highlight : #e0c097;
   }
+
+.resume-background{
+    background-color: white;
+}
+
+
+.background{
+    background-color: aqua;
+}
