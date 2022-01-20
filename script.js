@@ -70,3 +70,46 @@ function addeca(){
     // inserting the new node before add button
     ecaOb.insertBefore(newNode, ecaAddButtonOb);
 }
+
+
+// generate resume
+
+function genresume(){
+    // for name
+    let namefield = document.getElementById("nameField").value;
+    let nameT1 = document.getElementById("nameT1");
+    nameT1.innerHTML = namefield;
+    document.getElementById("nameT2").innerHTML = namefield;
+
+    // for contact
+    let contactfield = document.getElementById("contactField").value;
+    let contactT = document.getElementById("contactT");
+    contactT.innerHTML = contactfield;
+
+    // for gmail
+    let gmailfield = document.getElementById("emailField").value;
+    let gmailT = document.getElementById("mailT");
+    gmailT.innerHTML = gmailfield;
+
+    // for address
+    let addressfield = document.getElementById("addressField").value;
+    document.getElementById("addressT").innerHTML = addressfield;
+
+    // for github
+    document.getElementById("linkedT").innerHTML = document.getElementById("linkedinField").value;
+
+    // for linkedin
+    document.getElementById("gitT").innerHTML = document.getElementById("githubField").value;
+
+    // for portfolio
+    document.getElementById("portfolioT").innerHTML = document.getElementById("portfolioField").value;
+
+    // for objective
+    document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
+
+    // for skill
+    document.getElementById("skillT").innerHTML = document.getElementById("stField").value;
+
+    // for extracullicular activities
+    document.getElementById("T").innerHTML = document.getElementById("Field").value;
+}
