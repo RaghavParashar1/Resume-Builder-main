@@ -147,3 +147,11 @@ function genresume() {
     document.getElementById("resume-form").style.display = "none";
     document.getElementById("resume-template").style.display = "block";
 }
+
+
+function printresume() {
+    document.getElementById("print-button").style.display = "none";
+    window.print();
+    document.getElementById("print-button").style.display = "block";
+
+}

@@ -1,22 +1,30 @@
-#resume-form{
+#resume-form {
     /* display: none; */
 }
 
-#resume-template{
+#resume-template {
     display: none;
 }
 
-.myimg{
+#print-button {
+    /* display: none; */
+}
+
+#main-heading {
+    /* display: none; */
+}
+
+.myimg {
     /* border: 1px solid red; */
     border-radius: 50%;
     width: 200px;
 }
 
-body{
+body {
     background-color: var(--highlight);
 }
 
-.buton{
+.buton {
     background-color: var(--primary);
     border-radius: 5px;
     color: var(--highlight);
@@ -28,8 +36,7 @@ body{
     cursor: pointer;
 }
 
-
-.buton1{
+.buton1 {
     background-color: var(--primary);
     border-radius: 5px;
     color: var(--highlight);
@@ -41,11 +48,9 @@ body{
     cursor: pointer;
 }
 
-
-.text{
+.text {
     color: var(--primary);
 }
-
 
 .form-control:focus {
     color: #212529;
@@ -57,18 +62,35 @@ body{
 
 
 /* color codes */
-:root {
+
+ :root {
     --primary: #2d2424;
     --secondary: #5c3d2e;
     --light: #b85c38;
-    --highlight : #e0c097;
-  }
-
-.resume-background{
-    background-color: white;
+    --highlight: #e0c097;
 }
 
+.resume-background {
+    background-color: white;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
 
-.background{
+.background {
     background-color: aqua;
+}
+
+@media print {
+    .attributes {
+        background: white;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    body {
+        background-color: white;
+    }
 }
