@@ -1,6 +1,10 @@
-/* #resume-form{
+#resume-form{
+    /* display: none; */
+}
+
+#resume-template{
     display: none;
-} */
+}
 
 .myimg{
     /* border: 1px solid red; */

@@ -142,4 +142,8 @@ function genresume() {
     }
 
     document.getElementById("eaT").innerHTML = str2;
+
+
+    document.getElementById("resume-form").style.display = "none";
+    document.getElementById("resume-template").style.display = "block";
 }
