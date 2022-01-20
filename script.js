@@ -1,20 +1,20 @@
 // To Prevent User From Reloading The Page
-window.addEventListener('beforeunload', ()=>{
+window.addEventListener('beforeunload', () => {
     event.preventDefault();
     event.returnValue = "";
 })
 
 
 // functionalty of workex button
-function addwe(){
+function addwe() {
     // creating new node which contains textarea 
     let newNode = document.createElement("textarea");
     // adding classes in new node
     newNode.classList.add("form-control");
     newNode.classList.add("weField");
     newNode.classList.add("mt-2");
-    newNode.setAttribute("rows",2);
-    newNode.setAttribute("placeholder","Enter Your Work Details Here")
+    newNode.setAttribute("rows", 2);
+    newNode.setAttribute("placeholder", "Enter Your Work Details Here")
 
     // giving refernce to the areas in which we have to insert the new node
     // reference of div class where new node is inserting
@@ -27,7 +27,7 @@ function addwe(){
 }
 
 // functionality of academic qualification button
-function addaq(){
+function addaq() {
     // console.log("added");
     // creating new node which contains textarea 
     let newNode = document.createElement("textarea");
@@ -35,8 +35,8 @@ function addaq(){
     newNode.classList.add("form-control");
     newNode.classList.add("aqField");
     newNode.classList.add("mt-2");
-    newNode.setAttribute("rows",2);
-    newNode.setAttribute("placeholder","Enter Your Academic Qualification Here")
+    newNode.setAttribute("rows", 2);
+    newNode.setAttribute("placeholder", "Enter Your Academic Qualification Here")
 
     // giving refernce to the areas in which we have to insert the new node
     // reference of div class where new node is inserting
@@ -50,7 +50,7 @@ function addaq(){
 
 
 // functionality of Extracurricular Activity button
-function addeca(){
+function addeca() {
     // console.log("added");
     // creating new node which contains textarea 
     let newNode = document.createElement("textarea");
@@ -58,8 +58,8 @@ function addeca(){
     newNode.classList.add("form-control");
     newNode.classList.add("ecaField");
     newNode.classList.add("mt-2");
-    newNode.setAttribute("rows",2);
-    newNode.setAttribute("placeholder","Enter Your Extracurricular Activity Here")
+    newNode.setAttribute("rows", 2);
+    newNode.setAttribute("placeholder", "Enter Your Extracurricular Activity Here")
 
     // giving refernce to the areas in which we have to insert the new node
     // reference of div class where new node is inserting
@@ -74,7 +74,7 @@ function addeca(){
 
 // generate resume
 
-function genresume(){
+function genresume() {
     // for name
     let namefield = document.getElementById("nameField").value;
     let nameT1 = document.getElementById("nameT1");
@@ -110,6 +110,36 @@ function genresume(){
     // for skill
     document.getElementById("skillT").innerHTML = document.getElementById("stField").value;
 
-    // for extracullicular activities
-    document.getElementById("T").innerHTML = document.getElementById("Field").value;
+    // for work experience
+    let wes = document.getElementsByClassName("weField");
+
+    let str = ''
+
+    for (let e of wes) {
+        str = str + "<li>" + e.value + "</li>"
+    }
+
+    document.getElementById("weT").innerHTML = str;
+
+    // for academic qualification
+    let aqs = document.getElementsByClassName("aqField");
+
+    let str1 = ''
+
+    for (let e of aqs) {
+        str1 = str1 + "<li>" + e.value + "</li>"
+    }
+
+    document.getElementById("aqT").innerHTML = str1;
+
+    // for academic qualification
+    let eas = document.getElementsByClassName("ecaField");
+
+    let str2 = ''
+
+    for (let e of eas) {
+        str2 = str2 + "<li>" + e.value + "</li>"
+    }
+
+    document.getElementById("eaT").innerHTML = str2;
 }
