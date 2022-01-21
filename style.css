@@ -72,23 +72,44 @@ body {
 
 .resume-background {
     background-color: white;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .background {
     background-color: aqua;
 }
 
+.row {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+}
+
 @media print {
     .attributes {
         background: white;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .row {
+        /* margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 100%;
+        height: 100%; */
+        background-size: cover;
     }
     body {
         background-color: white;
