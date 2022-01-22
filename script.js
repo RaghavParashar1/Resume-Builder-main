@@ -164,7 +164,14 @@ function genresume() {
 
 function printresume() {
     document.getElementById("print-button").style.display = "none";
+    document.getElementById("back-button").style.display = "none";
     window.print();
     document.getElementById("print-button").style.display = "block";
+    document.getElementById("back-button").style.display = "block";
 
+}
+
+function back() {
+    document.getElementById("resume-form").style.display = "block";
+    document.getElementById("resume-template").style.display = "none";
 }
