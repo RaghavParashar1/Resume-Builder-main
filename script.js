@@ -161,7 +161,7 @@ function genresume() {
     document.getElementById("resume-template").style.display = "block";
 }
 
-
+// function for print
 function printresume() {
     document.getElementById("print-button").style.display = "none";
     document.getElementById("back-button").style.display = "none";
@@ -171,6 +171,8 @@ function printresume() {
 
 }
 
+
+// function for baack button
 function back() {
     document.getElementById("resume-form").style.display = "block";
     document.getElementById("resume-template").style.display = "none";
