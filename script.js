@@ -77,37 +77,78 @@ function addeca() {
 function genresume() {
     // for name
     let namefield = document.getElementById("nameField").value;
+    if (namefield == "") {
+        document.getElementById("namespan").innerHTML = "** Please enter name"
+        return false;
+    }
     let nameT1 = document.getElementById("nameT1");
     nameT1.innerHTML = namefield;
     document.getElementById("nameT2").innerHTML = namefield;
 
     // for contact
     let contactfield = document.getElementById("contactField").value;
+    if (contactfield == "") {
+        document.getElementById("contactspan").innerHTML = "** Please enter contact"
+        return false;
+    }
     let contactT = document.getElementById("contactT");
     contactT.innerHTML = contactfield;
 
     // for gmail
     let gmailfield = document.getElementById("emailField").value;
+    if (gmailfield == "") {
+        document.getElementById("emailspan").innerHTML = "** Please enter gmail"
+        return false;
+    }
     let gmailT = document.getElementById("mailT");
     gmailT.innerHTML = gmailfield;
 
     // for address
     let addressfield = document.getElementById("addressField").value;
+    if (addressfield == "") {
+        document.getElementById("addressspan").innerHTML = "** Please enter address"
+        return false;
+    }
     document.getElementById("addressT").innerHTML = addressfield;
 
-    // for github
+    // for linkedin
+    let linkedfield = document.getElementById("linkedinField").value;
+    if (linkedfield == "") {
+        document.getElementById("linkedinspan").innerHTML = "** Please enter linkedin i'd"
+        return false;
+    }
     document.getElementById("linkedT").innerHTML = document.getElementById("linkedinField").value;
 
-    // for linkedin
+    // for github
+    let gitfield = document.getElementById("githubField").value;
+    if (gitfield == "") {
+        document.getElementById("gitspan").innerHTML = "** Please enter github link"
+        return false;
+    }
     document.getElementById("gitT").innerHTML = document.getElementById("githubField").value;
 
     // for portfolio
+    let portfield = document.getElementById("portfolioField").value;
+    if (portfield == "") {
+        document.getElementById("portfoliospan").innerHTML = "** Please enter portfolio link"
+        return false;
+    }
     document.getElementById("portfolioT").innerHTML = document.getElementById("portfolioField").value;
 
     // for objective
+    let objectivefield = document.getElementById("objectiveField").value;
+    if (objectivefield == "") {
+        document.getElementById("objectivespan").innerHTML = "** Please enter objective"
+        return false;
+    }
     document.getElementById("objectiveT").innerHTML = document.getElementById("objectiveField").value;
 
     // for skill
+    let stfield = document.getElementById("stField").value;
+    if (stfield == "") {
+        document.getElementById("skillspan").innerHTML = "** Please enter skill"
+        return false;
+    }
     document.getElementById("skillT").innerHTML = document.getElementById("stField").value;
 
     // for work experience
@@ -116,8 +157,13 @@ function genresume() {
     let str = ''
 
     for (let e of wes) {
+        if (e.value == "") {
+            document.getElementById("workexspan").innerHTML = "** Please enter workex"
+            return false;
+        }
         str = str + "<li>" + e.value + "</li>"
     }
+
 
     document.getElementById("weT").innerHTML = str;
 
@@ -127,6 +173,10 @@ function genresume() {
     let str1 = ''
 
     for (let e of aqs) {
+        if (e.value == "") {
+            document.getElementById("academicspan").innerHTML = "** Please enter Academic Qualification"
+            return false;
+        }
         str1 = str1 + "<li>" + e.value + "</li>"
     }
 
@@ -138,6 +188,10 @@ function genresume() {
     let str2 = ''
 
     for (let e of eas) {
+        if (e.value == "") {
+            document.getElementById("extraspan").innerHTML = "** Please enter Extracurricular Activity"
+            return false;
+        }
         str2 = str2 + "<li>" + e.value + "</li>"
     }
 

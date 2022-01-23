@@ -22,21 +22,26 @@
                 <div class="form-group mt-2">
                     <label class="text" for="nameField">Your Name</label>
                     <input type="text" id="nameField" placeholder="Enter Your Name Here" class="form-control" />
+                    <span id="namespan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-2">
                     <label class="text" for="contactField">Your Contact Number</label>
                     <input type="text" id="contactField" placeholder="Enter Your Contact Here" class="form-control" />
+                    <span id="contactspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-2">
                     <label class="text" for="emailField">Your Gmail I'd</label>
                     <input type="text" id="emailField" placeholder="Enter Your I'd Here" class="form-control" />
+                    <span id="emailspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-2">
                     <label class="text" for="addressField">Your Address</label>
                     <textarea type="text" id="addressField" placeholder="Enter Your Address Here" class="form-control" rows="3"></textarea>
+                    <span id="addressspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label class="text" for="contactField">Select your photo</label>
+                    <label class="text-danger font-weight-bold">Mandatory field</label>
                     <br>
                     <input id="imgField" type="file" class="form-group">
                 </div>
@@ -45,14 +50,17 @@
                 <div class="form-group mt-2">
                     <label class="text" for="githubField">Github</label>
                     <input type="url" id="githubField" placeholder="Enter Your link Here" class="form-control" />
+                    <span id="gitspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-2">
                     <label class="text" for="linkedinField">LinkedIn</label>
                     <input type="url" id="linkedinField" placeholder="Enter Your link Here" class="form-control" />
+                    <span id="linkedinspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <div class="form-group mt-2">
                     <label class="text" for="portfolioField">Portfolio Link</label>
                     <input type="url" id="portfolioField" placeholder="Enter Your link Here" class="form-control" />
+                    <span id="portfoliospan" class="text-danger font-weight-bold"></span>
                 </div>
             </div>
             <!-- Professional Information -->
@@ -62,16 +70,19 @@
                 <div class="form-group mt-2">
                     <label class="text" for="objectiveField">Objective</label>
                     <textarea type="text" id="objectiveField" placeholder="Enter Your Objective Here" class="form-control" rows="2"></textarea>
+                    <span id="objectivespan" class="text-danger font-weight-bold"></span>
                 </div>
                 <!-- Skill field -->
                 <div class="form-group mt-2">
                     <label class="text" for="stField">Skill and Technologies</label>
                     <textarea type="text" id="stField" placeholder="Enter Your Objective Here" class="form-control" rows="2"></textarea>
+                    <span id="skillspan" class="text-danger font-weight-bold"></span>
                 </div>
                 <!-- Work experience -->
                 <div class="form-group mt-2" id="we">
                     <label class="text" for="">Work Experience</label>
                     <textarea type="text" placeholder="Enter Your Work Details Here" class="form-control weField" rows="2"></textarea>
+                    <span id="workexspan" class="text-danger font-weight-bold"></span>
                     <!-- button -->
                     <div class="container text-center mt-2" id="weAddButton">
                         <button onclick="addwe()" class="button">Add</button>
@@ -81,6 +92,7 @@
                 <div class="form-group mt-2" id="aq">
                     <label class="text" for="">Academic Qualification</label>
                     <textarea type="text" placeholder="Enter Your Academic Qualification Here" class="form-control aqField" rows="2"></textarea>
+                    <span id="academicspan" class="text-danger font-weight-bold"></span>
                     <!-- button -->
                     <div class="container text-center mt-2" id="aqAddButton">
                         <button onclick="addaq()" class="button">Add</button>
@@ -90,6 +102,7 @@
                 <div class="form-group mt-2" id="eca">
                     <label class="text" for="">Extracurricular Activity</label>
                     <textarea type="text" placeholder="Enter Your Extracurricular Activity Here" class="form-control ecaField" rows="2"></textarea>
+                    <span id="extraspan" class="text-danger font-weight-bold"></span>
                     <!-- button -->
                     <div class="container text-center mt-2" id="ecaAddButton">
                         <button onclick="addeca()" class="button">Add</button>
@@ -132,7 +145,7 @@
                     <!-- skill card -->
                     <div class="card mt-4">
                         <div class="card-header background">
-                            <h3>Skill and Technologies</h3>
+                            <h3>Skills</h3>
                         </div>
                         <div class="card-body">
                             <p id="skillT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, optio officiis, temporibus dolor dignissimos facilis voluptates quam quod praesentium exercitationem necessitatibus enim corporis sunt quia mollitia, obcaecati cumque
@@ -165,7 +178,6 @@
                     </div>
                     <div class="card-body">
                         <ul id="weT">
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quibusdam.</li>
                         </ul>
                     </div>
                 </div>
