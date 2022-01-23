@@ -7,6 +7,7 @@ This project provides users an interactive forms and templates in which user can
 How to dynamically change data in html.<br />
 How to send data from Html form to a particular template using Javascript.<br />
 How to create a printable CSS file.<br />
+How to add validation using Javascript
 
 # Future Work
 Add more Resume templates.<br />
