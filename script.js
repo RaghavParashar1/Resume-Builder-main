@@ -213,6 +213,11 @@ function genresume() {
 
     document.getElementById("resume-form").style.display = "none";
     document.getElementById("resume-template").style.display = "block";
+
+    // for date
+    var today = new Date();
+    var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+    document.getElementById("currentDate").value = date;
 }
 
 // function for print
