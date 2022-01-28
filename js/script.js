@@ -22,8 +22,13 @@ function addwe() {
     // reference of id before which we have to insert the new node
     let weAddButtonOb = document.getElementById("weAddButton");
 
-    // inserting the new node before add button
+    // let newNode2 = document.createElement("input");
+    // newNode2.classList.add("form-control");
+    // newNode2.setAttribute("type", "date")
+
+    // inserting the new nodes before add button
     weOb.insertBefore(newNode, weAddButtonOb);
+    // weOb.insertBefore(newNode2, weAddButtonOb);
 }
 
 // functionality of academic qualification button
